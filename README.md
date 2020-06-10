@@ -16,7 +16,8 @@ npm install eslint babel-eslint eslint-plugin-react eslint-watch -D
 ```
 npm run build
 npm run build:dev
-npm run start:dev
+npm start
+npm run eslint
 ```
 
 ## Geral
