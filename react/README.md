@@ -68,6 +68,21 @@ Plugins         ->          Otimização de pacotes
 Mode            ->          Passa os tipos de configurações, production, development ou none
 webpack.config.js - Arquivo que configura o Webpack
 
-
+### Manipulando eventos
+#### onClick
+const showEvent = (e) => { // O (e) é o evento que aconteceu
+    console.log(e);
+}
+<button onClick={showEvent}>Show</button>
+#### onClick passando props, argumentos
+const removeCustomer = (e, id) => {
+    console.log(`Cliente ID: ${id}`);
+}
+<button onClick={(e) => removeCustomer(e, customer.id)}>Deletar</button>
+#### onChange
+const handleChange = (e) => { // O (e) é o evento que aconteceu
+    console.log(e.targed.value); // Pega o valor
+}
+<input onChange={handleChange} />
 
 ```
